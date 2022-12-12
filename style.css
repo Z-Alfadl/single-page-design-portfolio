@@ -24,19 +24,19 @@ body {
     justify-content: center;
     margin: 0 auto;
 }
-
+/*Basic Structure for Sections*/
 header,
 footer,
 .intro,
 .grid,
 .personal,
-.promo,
+.mywork,
 .contact {
     max-width: 21.4375rem;
     margin: 0 auto;
 }
 
-/*Styling for Free Consultation Buttons*/
+/*Styling for 'Free Consultation' Buttons*/
 .consult {
     color: var(--seashell);
     border-radius: 1.75rem;
@@ -73,7 +73,7 @@ footer,
     width: 20em;
 }
 
-/*Introduction*/
+/*Style for Introduction Section*/
 
 .intro {
     text-align: center;
@@ -92,7 +92,7 @@ p {
     font-weight: 500;
 }
 
-/*Grid*/
+/*Style for Grid Section*/
 
 .grid {
     display: grid;
@@ -155,7 +155,7 @@ p {
     margin: 1.5em;
 }
 
-/*Personal Section*/
+/*Style for Personal Section*/
 
 .personal {
     margin-top: 6.25em;
@@ -184,14 +184,22 @@ p {
     margin: 1.5rem auto;
 }
 
-/*Promo Slides using Swiper.js*/
-.promo {
+/*Style for 'My Work' Slides using Swiper.js*/
+.mywork {
     text-align: center;
     margin-top: 6.25rem;
     margin-bottom: 6.25rem;
     position: relative;
 }
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    }
 
+    /*Style for Slide Navigation*/
 .arrow-box {
     width: 11.875rem;
     height: 4rem;
@@ -217,15 +225,7 @@ p {
     display: none;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.625rem;
-    }
-
-/*Contact Sections*/
+/*Style for Contact Sections*/
 .contact {
     height: 22rem;
     border-radius: 0.625rem;
@@ -253,12 +253,12 @@ p {
     .intro,
     .grid,
     .personal,
-    .promo,
+    .mywork,
     .contact {
         max-width: 43.125rem;
     }
     
-    /*Styling for Free Consultation Buttons*/
+    /*'Consultation' Button (Tablet)*/
     .consult {
         font-size: 1rem;
         font-weight: 700;
@@ -266,12 +266,12 @@ p {
         height: 3.5rem
     }
 
-    /*Header and Footer Icon/Button Styling */
+    /*Icon Header/Footer (Tablet) */
     .icon {
         width: 43rem;
     }
 
-    /*Introduction (Tablet Screen)*/
+    /*Introduction (Tablet)*/
     .intro {
         margin: 4rem auto;
     }
@@ -287,16 +287,11 @@ p {
        margin-top: 1.6875rem;
     }
 
-    /*Grid (Tablet Screen)*/
+    /*Grid (Tablet)*/
 
     .grid {
         grid-template-columns: repeat(4, 9.6875rem);
         grid-template-rows: repeat(3, 11.375rem);
-    }
-
-    .grid>div {
-        border-radius: 0.5em;
-        position: relative;
     }
 
     .big {
@@ -341,7 +336,7 @@ p {
         font-size: 1.5rem;
         line-height: 1.89rem;
     }
-    /*Personal Section (Tablet Screen)*/
+    /*Personal Section (Tablet)*/
 
 .personal {
     margin-top: 7.5em;
@@ -369,8 +364,8 @@ p {
     line-height: 1.75rem;
 }
 
-/*Promo Slides using Swiper.js (Tablet Screen)*/
-.promo {
+/*Promo Slides using Swiper.js (Tablet)*/
+.mywork {
     margin-top: 7.5rem;
     margin-bottom: 7.5rem;
     font-size: 2rem;
@@ -388,12 +383,12 @@ p {
     footer,
     .intro,
     .grid,
-    .promo,
+    .mywork,
     .personal,
     .contact {
         max-width: 69.4375rem;
     }
-    /*Header and Footer Icon/Button Styling (Desktop Screen) */
+    /*Header and Footer Icon/Button Styling (Desktop) */
     .icon {
         width: 69rem;
     }
@@ -403,7 +398,7 @@ p {
         width: 14.25rem;
         height: 3.5rem
     }
-    /*Introduction (Desktop Screen)*/
+    /*Introduction (Desktop)*/
     .intro {
         margin: 4.125rem auto 5rem;
     }
@@ -416,7 +411,7 @@ p {
        margin-top: 1.5rem;
     }
 
-    /*Grid (Desktop Screen)*/
+    /*Grid (Desktop)*/
 
     .grid {
         grid-template-columns: repeat(6, 10.25rem);
@@ -454,7 +449,7 @@ p {
         grid-row: 2/3;
         height: 9.875rem;
     }
-     /*Personal Section (Desktop Screen)*/
+     /*Personal Section (Desktop)*/
 
 .personal {
     margin-top: 8.5em;
@@ -480,8 +475,8 @@ p {
     margin-top: 2.125rem;
 }
 
-/*Promo Slideshow (Desktop Screen)*/
-.promo {
+/*Promo Slideshow (Desktop)*/
+.mywork {
     margin-top: 5.5rem;
     margin-bottom: 5.5rem;
 }
@@ -489,7 +484,7 @@ p {
     margin-top: 3.5rem;
 }
 
-/*Contact (Desktop Screen)*/
+/*Contact (Desktop)*/
 .contact {
     display: flex;
     align-items: center;
