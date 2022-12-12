@@ -1,17 +1,18 @@
-let slides = document.getElementsByClassName("slides");
-let currentslide = 0
-
-function ChangeSlide(num) {
- if (num >= slides.length) {num = 0;}
- if (num < 0) {num = slides.length - 1}
-
- slides[currentslide].classList.toggle("active")
- slides[num].classList.toggle("active")
-}
-
-document.getElementById("forward").addEventListener("click", () =>{
-    ChangeSlide(currentslide+1)
-})
-document.getElementById("backward").addEventListener("click", () =>{
-    ChangeSlide(currentslide-1)
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 2,
+  spaceBetween: 15,
+  centeredSlidesBounds: true,
+  breakpoints: {
+    //when window is >=1025px
+    1025: {
+      slidesPerView: 3,
+    spaceBetween: 30,
+  }},
+  direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  }
 })
